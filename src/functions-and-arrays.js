@@ -11,21 +11,23 @@ maxOfTwoNumbers(4,4)
 // Iteration #2: Find longest word
 /* const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord(arr= ironhack){
+function findLongestWord(arr){
   let wordLength = '';
+  if(arr.length == ''){
+    return null
+  }
   for (let i=0;i<arr.length;i++){
   if(arr[i].length > wordLength.length){
-
-    return wordLength += arr[i];
+    wordLength = arr[i]
   }
 }
-return wordLength = null;
+return wordLength 
 }
-findLongestWord(words)
- */
+findLongestWord(words) */
+
 // Iteration #3: Calculate the sum
 
-const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+/* const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 function sumNumbers(arr){
   let sum = 0;
   if (arr.length == ''){
@@ -38,7 +40,7 @@ return sum
 }
 sumNumbers(numbers)
 
-
+ */
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
