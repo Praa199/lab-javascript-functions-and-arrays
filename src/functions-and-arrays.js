@@ -60,17 +60,23 @@ averageNumbers(numbersAvg)
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
 function averageWordLength(arr){
-  let sum = 0;
+  let sum = '';
+  
   if (arr.length == ''){
     return null
   }
-for (let i in arr) {
-  sum+= arr[i]
+  
+  for (let i in arr){
+    
+for (let j in arr[i]) {
+  sum+= arr[i][j]
+  sum.length
 }
-return sum.length
+
+  }
+  return sum.length / arr.length
 }
-averageWordLength(numbersAvg)
- 
+averageWordLength(wordsArr)
 // Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
